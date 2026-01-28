@@ -1,0 +1,1 @@
+// En un .h: nombre de la clase qué puede hacer qué datos tiene
