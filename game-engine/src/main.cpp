@@ -1,14 +1,28 @@
 #include <iostream>
 using namespace std;
 
+// un enum es un tipo de dato 
+// que define un conjunto fijo de valores osea que no cambia
+enum class EngineState {
+
+STARTING,
+RUNNING,
+STOPPED
+
+};
+
 int main ()
 {
 int tickCount = 0;
-bool isRunning = true;
+// engineState es la varibale de tipo EngineState y en la derehca guardo STARTING en engineState
+EngineState engineState;
 
 cout << "Starting Engine.....";
 
-while (isRunning)
+engineState = EngineState::STARTING;
+engineState = EngineState::RUNNING;
+
+while (engineState == EngineState::RUNNING)
 {
   tickCount++;
 
@@ -16,7 +30,7 @@ while (isRunning)
 
   if (tickCount >= 5)
   {
-    isRunning = false;
+   engineState = EngineState::STOPPED;
   }
   
 }
