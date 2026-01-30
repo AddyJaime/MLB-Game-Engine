@@ -31,9 +31,13 @@
 // Esto es DEFINICIÓN, no ejecución.
 class Engine
 {
+    // Esto es lo que otros pueden usar.
 public:
     // Constructor
-    // Se llama cuando el Engine es creado.
+    // “Se crea un Engine”
+    // Se crea un OBJETO de tipo Engine en memoria
+    // se reserva espacio
+    // nace una instancia
     Engine();
 
     // Arranca el engine
@@ -44,8 +48,7 @@ public:
     // Cambia el estado a STOPPED.
     void stop();
 
-    // Devuelve el estado actual del engine
-    // 'const' significa que esta función NO modifica nada.
+//    esto es una promesa dejandole saber a los otros archivos que esta funcion o promesa existe y devolvera un Enginestate
     EngineState getState() const;
 
 private:

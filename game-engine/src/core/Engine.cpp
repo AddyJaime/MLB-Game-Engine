@@ -5,10 +5,14 @@
 // - cómo arranca
 // - cómo se detiene
 // - cómo maneja su estado
+
+
+// aqui cumplimos la promesa ejecutandola
 #include "Engine.h"
 
 Engine::Engine()
 {
+  // aqui arrancamos el engine de verdad
   state = EngineState::STARTING;
 }
 
@@ -22,6 +26,7 @@ void Engine::stop()
   state = EngineState::STOPPED;
 }
 
+// devulde el estaod actual en el que se encuentra el engine
 EngineState Engine::getState() const
 {
   return state;
