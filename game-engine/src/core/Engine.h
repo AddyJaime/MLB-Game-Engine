@@ -54,6 +54,7 @@ public:
 private:
     // Estado interno del engine
     // Es privado porque SOLO el Engine debe controlarlo.
+    // EngineSt es un objecto especial que solo puede ser starting,running, stop.
     EngineState state;
 };
 
