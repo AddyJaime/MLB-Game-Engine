@@ -14,16 +14,19 @@ Engine::Engine()
 {
   // aqui arrancamos el engine de verdad
   state = EngineState::STARTING;
+  logger.logEngine("Engine Started ");
 }
 
 void Engine::start()
 {
   state = EngineState::RUNNING;
+  logger.logEngine("Engine Running");
 }
 
 void Engine::stop()
 {
   state = EngineState::STOPPED;
+  logger.logEngine("Engine Stopped");
 }
 
 // devulde el estaod actual en el que se encuentra el engine

@@ -3,32 +3,18 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-// ===============================
-// Engine.h
-// ===============================
-//
-// ESTE ARCHIVO DEFINE QUÉ ES EL ENGINE.
-//
+
+
 // - Aquí NO se ejecuta lógica.
 // - Aquí NO hay comportamiento.
 // - Aquí SOLO se define:
 //     • El nombre de la clase
 //     • Qué puede hacer
 //     • Qué datos internos tiene
-//
-// Regla mental:
-// 👉 Los .h explican QUÉ existe.
-// 👉 Los .cpp explican CÓMO funciona.
-//
-// Los .h ordenan la mente.
-//
 
 #include "EngineState.h" // El Engine necesita conocer su estado
+#include "Logging/Logger.h"
 
-// -------------------------------
-// Definición de la clase Engine
-// -------------------------------
-// Esto es DEFINICIÓN, no ejecución.
 class Engine
 {
     // Esto es lo que otros pueden usar.
@@ -56,6 +42,7 @@ private:
     // Es privado porque SOLO el Engine debe controlarlo.
     // EngineSt es un objecto especial que solo puede ser starting,running, stop.
     EngineState state;
+    Logger logger;
 };
 
-#endif // ENGINE_H
+#endif 

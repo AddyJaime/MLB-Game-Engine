@@ -1,3 +1,19 @@
-// ESTE FILE dice QUÉ es la clase
-// En un .h: nombre de la clase qué puede hacer qué datos tiene
-// Los .h ordenan la mente.
+
+#ifndef GAMELOOP_H
+#define GAMELOOP_H
+
+
+class GameLoop{
+
+public:
+
+ void startLoop();
+
+ void stopLoop();
+
+
+private:
+bool isRunning;
+
+};
+#endif 
