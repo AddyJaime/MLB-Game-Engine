@@ -14,6 +14,7 @@
 
 #include "EngineState.h" // El Engine necesita conocer su estado
 #include "Logging/Logger.h"
+#include "loop/GameLoop.h"
 
 class Engine
 {
@@ -42,6 +43,7 @@ private:
     // Es privado porque SOLO el Engine debe controlarlo.
     // EngineSt es un objecto especial que solo puede ser starting,running, stop.
     EngineState state;
+    GameLoop gameLoop;
     Logger logger;
 };
 

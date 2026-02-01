@@ -3,7 +3,7 @@
 
 void GameLoop::startLoop()
 {
-  isRunning = false;
+  isRunning = true;
 while (isRunning)
 {
 

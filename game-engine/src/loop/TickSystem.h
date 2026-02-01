@@ -1,3 +1,16 @@
-// ESTE FILE dice QUÉ es la clase
-// En un .h: nombre de la clase qué puede hacer qué datos tiene
-// Los .h ordenan la mente.
+#ifndef TICKSYSTEM_H
+#define TICKSYSTEM_H
+
+class TickSystem
+{
+  public:
+
+  void advanceTick();
+
+  private:
+  int count;
+};
+
+#endif
+
+

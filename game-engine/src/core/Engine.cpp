@@ -20,12 +20,14 @@ Engine::Engine()
 void Engine::start()
 {
   state = EngineState::RUNNING;
+  gameLoop.startLoop();
   logger.logEngine("Engine Running");
 }
 
 void Engine::stop()
 {
   state = EngineState::STOPPED;
+  gameLoop.stopLoop();
   logger.logEngine("Engine Stopped");
 }
 
