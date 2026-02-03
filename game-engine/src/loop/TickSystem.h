@@ -4,6 +4,8 @@
 class TickSystem
 {
   public:
+  // esto es una declaracion/solo es un aviso
+ TickSystem();
 
   void advanceTick();
 

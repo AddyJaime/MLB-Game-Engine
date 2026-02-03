@@ -1,12 +1,13 @@
 
 #ifndef GAMELOOP_H
 #define GAMELOOP_H
+#include "TickSystem.h"
 
 
 class GameLoop{
 
 public:
-
+GameLoop();
  void startLoop();
 
  void stopLoop();
@@ -14,6 +15,7 @@ public:
 
 private:
 bool isRunning;
+TickSystem tickSystem;
 
 };
 #endif 

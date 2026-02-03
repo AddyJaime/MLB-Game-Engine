@@ -1,5 +1,6 @@
-#include "loop/TickSystem.h"
+#include "../loop/TickSystem.h"
 
+// esto es lo que hace el construtor cuando se llama
 TickSystem::TickSystem()
 {
   count = 0;
@@ -9,4 +10,5 @@ TickSystem::TickSystem()
 void TickSystem::advanceTick()
 {
  count++;
+
 }

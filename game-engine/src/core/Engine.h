@@ -13,8 +13,8 @@
 //     • Qué datos internos tiene
 
 #include "EngineState.h" // El Engine necesita conocer su estado
-#include "Logging/Logger.h"
-#include "loop/GameLoop.h"
+#include "../Logging/Logger.h"
+#include "../loop/GameLoop.h"
 
 class Engine
 {
