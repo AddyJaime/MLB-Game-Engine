@@ -2,19 +2,20 @@
 #ifndef GAMELOOP_H
 #define GAMELOOP_H
 #include "TickSystem.h"
+#include "../core/EngineState.h"
 
 
 class GameLoop{
 
 public:
 GameLoop();
- void startLoop();
+// esta funcion recibe el estado del engine, decide si el loop corre o no 
+ void startLoop(EngineState& state);
 
  void stopLoop();
 
 
 private:
-bool isRunning;
 TickSystem tickSystem;
 
 };

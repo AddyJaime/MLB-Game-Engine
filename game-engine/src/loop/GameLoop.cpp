@@ -1,30 +1,19 @@
 #include "GameLoop.h"
 #include "TickSystem.h"
 
-
-
 // el ciclo que repite cosas, solo repite mientras este encendido
 GameLoop::GameLoop()
 {
-  isRunning = false;
 }
 
-void GameLoop::startLoop()
+void GameLoop::startLoop(EngineState& state )
 {
-  isRunning = true;
-  int maxTicks = 10;
-while (isRunning && maxTicks > 0)
+  int maxTicks = 5;
+while (state == EngineState::RUNNING && maxTicks > 0)
 {
 tickSystem.advanceTick();
-
-maxTicks++;
-}
-stopLoop();
+maxTicks--;
 }
 
-void GameLoop::stopLoop()
-{
-  isRunning = false;
-
-
 }
+
