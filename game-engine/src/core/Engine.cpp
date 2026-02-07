@@ -5,7 +5,6 @@ Engine::Engine()
     state = EngineState::STARTING;
     logger.logEngine("Engine Created");
 }
-
 void Engine::start()
 {
     state = EngineState::RUNNING;
@@ -23,3 +22,4 @@ EngineState Engine::getState() const
 {
     return state;
 }
+

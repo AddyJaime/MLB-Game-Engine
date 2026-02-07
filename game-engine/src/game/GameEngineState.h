@@ -22,6 +22,8 @@ enum class InningHalft
 };
 
 // quien esta bateado
+// home equipo local 
+// away euqipo viisitante
 enum class BattingSide
 {
   HOME,
