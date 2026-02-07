@@ -3,13 +3,10 @@
 #define GAMELOOP_H
 #include "TickSystem.h"
 #include "../core/EngineState.h"
-
-
+#include "../Logging/Logger.h"
 class GameLoop{
-
 public:
 GameLoop();
-// esta funcion recibe el estado del engine, decide si el loop corre o no 
  void startLoop(EngineState& state);
 
  void stopLoop();
@@ -17,6 +14,6 @@ GameLoop();
 
 private:
 TickSystem tickSystem;
-
+Logger logger;
 };
 #endif 
