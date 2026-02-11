@@ -26,7 +26,7 @@ class GameState
   int awayScore;
   
   // el juego sigue o termino
-  GameStatus gameState;
+  GameStatus gameStatus;
 
 };
 

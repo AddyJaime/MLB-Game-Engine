@@ -3,33 +3,32 @@
 
 #include "../game/GameState.h"
 
-class GameRule
+class GameRules
 {
-  GameRule();
+  public:
+  GameRules();
 
   // set the starting inning when the game begins
-initializeInning();
+void initializeInning(GameState& state);
 
 // sets the game to start in the top half of the inning El juego siempre empieza conTop of the 1stVisitante batea
-setInningHalfTop();
+void setInningHalfTop(GameState& state);
 
 // resets outs to zero
-resetOuts();
+void resetOuts(GameState& state);
 
 // away team bats first
-setBattingSideAway();
+void setBattingSideAway(GameState& state);
 
 // clears home team score
-resetHomeScore();
+void resetHomeScore(GameState& state);
 
 // clears away team score
-resetAwayScore();
+void resetAwayScore(GameState& state);
 
 // marks game as active
-setGameInProgress();
+void setGameInProgress(GameState& state);
 
-  private:
-  GameState gameState;
 };
 
 #endif
