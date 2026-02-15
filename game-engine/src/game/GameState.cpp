@@ -1,5 +1,6 @@
 #include "../game/GameState.h"
 
+// el constructor aqui inicializa las variables
 GameState::GameState()
 {
 inning = 1;
@@ -8,6 +9,15 @@ outs = 0;
 battingSide = BattingSide::AWAY;
 homeScore = 0;
 awayScore = 0;
-gameState =  GameStatus::IN_PROGRESS;
+gameStatus =  GameStatus::IN_PROGRESS;
 
 }
+
+
+
+
+
+// EngineState Engine::getState() const
+// {
+//   return state;
+// }
